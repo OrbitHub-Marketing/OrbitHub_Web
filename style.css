@@ -563,72 +563,67 @@ background-color: #005fa3;
 
 /* ABOUT US section */
 .about-section {
-padding: 80px 20px;
-background-color: #ffffff;
-font-family: 'Poppins', sans-serif;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;     /* centra horizontalmente */
+  align-items: center;         /* centra verticalmente si hay altura suficiente */
+  text-align: center;          /* centra texto */
 }
+
 .about-container {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 40px;
-max-width: 1200px;
-margin: 0 auto;
-flex-wrap: wrap;
-text-align: center;
+  max-width: 900px;            /* controla el ancho del bloque */
+  margin: 0 auto;
 }
+
 .about-text {
-flex: 1 1 500px;
+  width: 100%;                 /* ocupa todo el ancho disponible */
+  margin: 0 auto;
 }
+
 .about-text h2 {
-font-size: 2.5rem;
-font-weight: 700;
-margin-bottom: 20px;
-color: #1f1f1f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f1f1f;
 }
+
 .about-text p {
-font-size: 1.05rem;
-line-height: 1.7;
-color: #444;
-margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
 }
+
 .about-btn {
-display: inline-block;
-background-color: #0077cc;
-color: #fff;
-text-decoration: none;
-padding: 12px 24px;
-border-radius: 50px;
-font-weight: 600;
-transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
+
 .about-btn:hover {
-background-color: #005fa3;
+  background-color: #005fa3;
 }
-.about-image {
-flex: 1 1 500px;
-text-align: center;
-}
-.about-image img {
-width: 100%;
-max-width: 400px;
-border-radius: 20px;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+
+/* No necesitamos .about-image porque se ha eliminado */
+
 /* Responsive */
 @media (max-width: 768px) {
-.about-container {
-  flex-direction: column;
-  text-align: center;
-}
-.about-text h2 {
-  font-size: 2rem;
-}
-.about-text {
-  padding: 0 10px;
-}
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  .about-container {
+    padding: 0 10px;
+  }
 }
 /* END ABOUT US section */
+
 
 
 
