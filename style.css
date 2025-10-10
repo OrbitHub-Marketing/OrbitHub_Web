@@ -228,7 +228,7 @@ nav ul li {
 
 
 
-/*FEATURE section*/
+/*FEATURE (What is OrbitHub) section*/
 .feature-section {
   display: flex;
   justify-content: center;
@@ -262,7 +262,7 @@ nav ul li {
   line-height: 1.6;
   color: #555;
 }
-/*END FEATURE section*/  
+/*END FEATURE (What is OrbitHub) section*/  
 
 
 
@@ -563,29 +563,26 @@ background-color: #005fa3;
 
 /* ABOUT US section */
 .about-section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;     /* centra horizontalmente */
-  align-items: center;         /* centra verticalmente si hay altura suficiente */
-  text-align: center;          /* centra texto */
 }
 
 .about-container {
-  max-width: 900px;            /* controla el ancho del bloque */
-  margin: 0 auto;
+  max-width: 1200px;            /* mismo ancho máximo que otras secciones */
+  margin: 0 auto;               /* centra horizontalmente en la página */
+  text-align: center;           /* centra el texto dentro */
 }
 
 .about-text {
-  width: 100%;                 /* ocupa todo el ancho disponible */
-  margin: 0 auto;
+  max-width: 800px;             /* limita el ancho de lectura como Features */
+  margin: 0 auto;               /* centra el bloque */
 }
 
 .about-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 40px;          /* ↑↑  → aumenta separación título–texto */
   color: #1f1f1f;
 }
 
@@ -593,7 +590,7 @@ background-color: #005fa3;
   font-size: 1.05rem;
   line-height: 1.7;
   color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 24px;          /* espacio más equilibrado entre párrafos */
 }
 
 .about-btn {
@@ -605,13 +602,12 @@ background-color: #005fa3;
   border-radius: 50px;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  margin-top: 40px; /* ↑↑ añade separación texto–botón similar a Features */
 }
 
 .about-btn:hover {
   background-color: #005fa3;
 }
-
-/* No necesitamos .about-image porque se ha eliminado */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -623,6 +619,7 @@ background-color: #005fa3;
   }
 }
 /* END ABOUT US section */
+
 
 
 
