@@ -582,7 +582,7 @@ background-color: #005fa3;
 .about-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 40px;          /* ↑↑  → aumenta separación título–texto */
+  margin-bottom: 30px;          /* ↑↑  → aumenta separación título–texto */
   color: #1f1f1f;
 }
 
@@ -602,7 +602,7 @@ background-color: #005fa3;
   border-radius: 50px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  margin-top: 60px; /* ↑↑ añade separación texto–botón similar a Features */
+  margin-top: 30px;             /* ↑↑ añade separación texto–botón similar a Features */
 }
 
 .about-btn:hover {
