@@ -602,7 +602,7 @@ background-color: #005fa3;
   border-radius: 50px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  margin-top: 40px; /* ↑↑ añade separación texto–botón similar a Features */
+  margin-top: 60px; /* ↑↑ añade separación texto–botón similar a Features */
 }
 
 .about-btn:hover {
