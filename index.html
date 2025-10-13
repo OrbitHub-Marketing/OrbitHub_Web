@@ -68,20 +68,26 @@
   </header>
   <!-- /HEADER -->
 
+
+
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" aria-label="Main introduction">
-      <img src="images/background_v2_300dpi.png" alt="Background image with modern lab motif" class="hero-img" />
-      <div class="hero-text">
-        <div class="hero-logo">
-          <img src="images/hero_v3.png" alt="OrbitHub logo" />
-          <span class="logo-name-inline">OrbitHub</span>
-        </div>
-        <h1>Innovative Labs &amp; Offices for DeepTech and Space Startups</h1>
-        <a href="#que-es-OrbitHub" class="btn">Learn More</a>
-      </div>
-    </section>
-    <!-- /HERO -->
+
+
+
+
+<!-- HERO Section -->
+<section class="hero" aria-label="Main introduction">
+  <img src="images/background_v2_300dpi.png" alt="Background image with modern lab motif" class="hero-img" />
+  <div class="hero-text">
+    <div class="hero-logo">
+      <img src="images/hero_v3.png" alt="OrbitHub logo" />
+      <span class="logo-name-inline">OrbitHub</span>
+    </div>
+    <h1>Innovative Labs &amp; Offices for DeepTech and Space Startups</h1>
+    <a href="#que-es-OrbitHub" class="btn">Learn More</a>
+  </div>
+</section>
+<!-- End HERO Section -->
 
 
 
@@ -259,7 +265,7 @@
         <h4>Networking</h4>
         <p>A collaborative hub for DeepTech and Space innovation. Join a network of professionals with shared goals and interests – and spark innovation through meaningful collaboration.</p>
       </div>
-      <a href="#contacto" class="btn-cta">Interested? Contact us!</a>
+      <a href="mailto:info@orbithub.tech" class="btn-cta">Interested? Contact us!</a>
     </div>
   </div>
 </section>
@@ -267,29 +273,69 @@
 
 
 
-    <!-- TEAMS -->
-    <section class="teams-section" aria-label="Teams currently at OrbitHub">
-      <div class="teams-container">
-        <h2 class="teams-title">Our Teams</h2>
-        <div class="teams-logos">
-          <img src="images/teams/BLT_logo_v9W.png" alt="BlackLink Technologies logo" />
-        </div>
-      </div>
-    </section>
-    <!-- /TEAMS -->
+<!-- TEAMS Section -->
+<section class="teams-section" aria-label="Teams currently at OrbitHub">
+  <div class="teams-container">
+    <h2 class="teams-title">Our Teams</h2>
+    <div class="teams-logos">
+      <a href="#" onclick="openTeamLink(event)" title="Visit BlackLink Technologies website">
+        <img src="images/teams/BLT_logo_v9W.png" alt="BlackLink Technologies logo" />
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- SPONSORS & COLLABORATORS -->
-    <section class="sponsor-section" id="sponsors" aria-label="Sponsors and collaborators">
-      <h2 class="sponsor-title">Sponsors &amp; Collaborators</h2>
-      <div class="sponsor-logos" role="list" aria-label="Sponsor logos">
-        <img src="images/sponsors/Ministerio_Enisa.jpg" alt="Spanish Government" role="listitem" />
-        <img src="images/sponsors/Space_Capital.jpg" alt="Space Capital" role="listitem" />
-        <img src="images/sponsors/Starburst_Aerospace.jpg" alt="Starburst Aerospace" role="listitem" />
-        <img src="images/sponsors/The_Aerospace_Corporation.jpg" alt="The Aerospace Corporation" role="listitem" />
-        <img src="images/sponsors/Impact_Hub.jpg" alt="Impact Hub" role="listitem" />
-      </div>
-    </section>
-    <!-- /SPONSORS & COLLABORATORS -->
+<script>
+function openTeamLink(event) {
+  event.preventDefault(); // prevent default <a> navigation
+
+  const webUrl = "https://www.blacklink.tech";
+  const appUrl = "blacklinktech://open"; // hypothetical deep-link to the app
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Try to open the app
+    const now = Date.now();
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = appUrl;
+    document.body.appendChild(iframe);
+
+    // Fallback to web if app not installed
+    setTimeout(() => {
+      if (Date.now() - now < 1500) {
+        window.open(webUrl, '_blank'); // ✅ opens in a new tab
+      }
+      document.body.removeChild(iframe);
+    }, 1000);
+  } else {
+    // ✅ Desktop: always open in a new tab
+    window.open(webUrl, '_blank');
+  }
+}
+</script>
+<!-- End TEAMS Section -->
+
+
+
+
+
+<!-- SPONSORS & COLLABORATORS Section -->
+<section class="sponsor-section" id="sponsors" aria-label="Sponsors and collaborators">
+  <h2 class="sponsor-title">Sponsors &amp; Collaborators</h2>
+  <div class="sponsor-logos" role="list" aria-label="Sponsor logos">
+    <img src="images/sponsors/Ministerio_Enisa.jpg" alt="Spanish Government" role="listitem" />
+    <!-- <img src="images/sponsors/Space_Capital.jpg" alt="Space Capital" role="listitem" /> -->
+    <!-- <img src="images/sponsors/Starburst_Aerospace.jpg" alt="Starburst Aerospace" role="listitem" /> -->
+    <!-- <img src="images/sponsors/The_Aerospace_Corporation.jpg" alt="The Aerospace Corporation" role="listitem" /> -->
+    <!-- <img src="images/sponsors/Impact_Hub.jpg" alt="Impact Hub" role="listitem" /> -->
+  </div>
+</section>
+<!-- End SPONSORS & COLLABORATORS Section -->
+
+
+
+
 
     <!-- CONTACT (anchor only) -->
     <div id="contacto" aria-hidden="true"></div>
@@ -304,10 +350,13 @@
       </p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#home">Home</a> |
-        <a href="#que-es-OrbitHub">What is OrbitHub</a> |
-        <a href="#sobre-nosotros">About Us</a> |
+        <a href="#que-es-OrbitHub">What is OrbitHub?</a> |
         <a href="#ubicaciones">Location</a> |
-        <a href="#contacto">Contact Us</a>
+        <a href="#features">Features</a> |
+        <a href="#sobre-nosotros">About us</a> |
+        <a href="#why-joining">Contact us</a> |
+        <a href="#esp" lang="es" hreflang="es">ESP</a>
+
       </nav>
       <div class="footer-legal">
         <a href="#">Legal Notice</a> |
@@ -327,6 +376,7 @@
   </footer>
   <!-- /FOOTER -->
 
+  
   <!-- COOKIE CONSENT -->
   <div id="cookieConsentBanner" class="cookie-consent-banner hidden" role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="cookieTitle">
     <p id="cookieTitle"><strong>Cookies</strong></p>
