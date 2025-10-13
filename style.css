@@ -555,7 +555,7 @@ display: block;
   color: #444;
   margin-bottom: 24px;          /* espacio más equilibrado entre párrafos */
 }
-.about-btn {
+/* .about-btn {
   display: inline-block;
   background-color: #0077cc;
   color: #fff;
@@ -564,11 +564,12 @@ display: block;
   border-radius: 50px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  margin-top: 30px;             /* ↑↑ añade separación texto–botón similar a Features */
+  margin-top: 30px;             
 }
 .about-btn:hover {
   background-color: #005fa3;
 }
+*/
 /* Responsive */
 @media (max-width: 768px) {
   .about-text h2 {
