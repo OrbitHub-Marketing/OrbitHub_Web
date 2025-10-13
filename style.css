@@ -299,12 +299,13 @@ nav ul li {
   color: #555;
 }
 /* Centered button under the three cards */
+/*
 .feature-btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 5px;  /* tighter spacing */
-}
+  margin-top: 5px;  /* tighter spacing 
+}*/
 /* END / WHAT IS ORBITHUB Section */
 
 
