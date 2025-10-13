@@ -310,7 +310,7 @@ nav ul li {
 
 
 
-/* LOCATION section */
+/* LOCATION Section */
 .location-section {                     /* characteristics for the whole section */
 text-align: center;
 padding: 100px 20px;                  /* gives always space above/below and left/right. padding: [TOP/BOTTOM] [LEFT/RIGHT] */
@@ -359,7 +359,7 @@ display: flex;
 gap: 0.5rem;                    /* This is the spacing between the three items */
 justify-content: space-between;
 align-items: stretch;
-width: 95%;
+width: 82%;
 max-width: 1600px;
 }
 /* === Individual items === */
@@ -407,7 +407,7 @@ font-size: 1.6rem;
 font-weight: 600;
 background: #0077cc;
 padding: 0px 0px 0px 0px;       /* Top Right Bottom Left. Space all-around INSIDE the border of the TITLE BOX. It pushes the content inward */
-margin: 0px 0px 50px 0px;       /* Top Right Bottom Left. Space all-around OUTSIDE the border of the TITLE BOX. It pushes the other elements away */
+margin: 0px 0px 30px 0px;       /* Top Right Bottom Left. Space all-around OUTSIDE the border of the TITLE BOX. It pushes the other elements away */
 }
 .highlight-content p {          /* TEXT BOX inside the blue box (highlight-content) */
 font-size: 1.1rem;
