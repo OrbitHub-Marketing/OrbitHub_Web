@@ -269,7 +269,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   gap: 80px;
-  padding: 20px 50px 40px 50px; /* reduced top padding */
+  padding: 5px 50px 40px 50px; /* reduced top padding */
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -303,7 +303,7 @@ nav ul li {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 20px;  /* tighter spacing */
+  margin-top: 10px;  /* tighter spacing */
 }
 /* END / WHAT IS ORBITHUB Section */
 
