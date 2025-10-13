@@ -416,7 +416,7 @@ background: #0077cc;
 padding: 0px 0px 0px 0px;      /* Top Right Bottom Left. Space all-around INSIDE the border of the TEXT BOX. It pushes the content inward */
 margin: 0px 0px 0px 0px;       /* Top Right Bottom Left. Space all-around OUTSIDE the border of the TEXT BOX. It pushes the other elements away */
 }
-.highlight-btn {
+/* .highlight-btn {
 background-color: white;
 color: #0077cc;
 padding: 1rem 2.5rem;
@@ -429,7 +429,7 @@ display: inline-block;
 }
 .highlight-btn:hover {
 background-color: #e6f0ff;
-}
+} */
 /* === Responsive behavior === */
 @media (max-width: 1024px) {
 .location-highlight {
