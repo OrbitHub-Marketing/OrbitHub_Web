@@ -528,6 +528,61 @@ display: block;
 
 
 
+/* ABOUT US Section */
+.about-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.about-container {
+  max-width: 1200px;            /* mismo ancho máximo que otras secciones */
+  margin: 0 auto;               /* centra horizontalmente en la página */
+  text-align: center;           /* centra el texto dentro */
+}
+.about-text {
+  max-width: 800px;             /* limita el ancho de lectura como Features */
+  margin: 0 auto;               /* centra el bloque */
+}
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;          /* ↑↑  → aumenta separación título–texto */
+  color: #1f1f1f;
+}
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 24px;          /* espacio más equilibrado entre párrafos */
+}
+.about-btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;             /* ↑↑ añade separación texto–botón similar a Features */
+}
+.about-btn:hover {
+  background-color: #005fa3;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  .about-container {
+    padding: 0 10px;
+  }
+}
+/* END ABOUT US Section */
+
+
+
+
 /* WHY JOIN US section */
 .why-join-section {
 padding: 80px 20px;
@@ -605,64 +660,7 @@ background-color: #005fa3;
 
 
 
-/* ABOUT US section */
-.about-section {
-  padding: 100px 20px;
-  background-color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-}
 
-.about-container {
-  max-width: 1200px;            /* mismo ancho máximo que otras secciones */
-  margin: 0 auto;               /* centra horizontalmente en la página */
-  text-align: center;           /* centra el texto dentro */
-}
-
-.about-text {
-  max-width: 800px;             /* limita el ancho de lectura como Features */
-  margin: 0 auto;               /* centra el bloque */
-}
-
-.about-text h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;          /* ↑↑  → aumenta separación título–texto */
-  color: #1f1f1f;
-}
-
-.about-text p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 24px;          /* espacio más equilibrado entre párrafos */
-}
-
-.about-btn {
-  display: inline-block;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;             /* ↑↑ añade separación texto–botón similar a Features */
-}
-
-.about-btn:hover {
-  background-color: #005fa3;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-text h2 {
-    font-size: 2rem;
-  }
-  .about-container {
-    padding: 0 10px;
-  }
-}
-/* END ABOUT US section */
 
 
 
