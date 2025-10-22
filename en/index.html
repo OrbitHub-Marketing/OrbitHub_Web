@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Canonical propia -->
+  <link rel="canonical" href="https://orbithub.tech/en/" />
+  
+  <!-- Hreflang cruzado -->
+  <link rel="alternate" href="https://orbithub.tech/en/" hreflang="en" />
+  <link rel="alternate" href="https://orbithub.tech/es/" hreflang="es" />
+  <link rel="alternate" href="https://orbithub.tech/" hreflang="x-default" />
+
+  <!-- Open Graph URL -->
+  <meta property="og:url" content="https://orbithub.tech/en/" />
 
   <!-- Primary Meta -->
   <title>OrbitHub – Innovative Labs & Offices for Space and DeepTech Startups</title>
@@ -61,7 +73,7 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#sobre-nosotros">About us</a></li>
           <li><a href="#why-joining">Contact us</a></li>
-          <li><a href="#esp" lang="es" hreflang="es">ESP</a></li>
+          <li><a href="/es/" lang="es" hreflang="es" onclick="sessionStorage.setItem('langChosen','es')">ESP</a></li>
         </ul>
       </nav>
     </div>
@@ -355,7 +367,8 @@ function openTeamLink(event) {
         <a href="#features">Features</a> |
         <a href="#sobre-nosotros">About us</a> |
         <a href="#why-joining">Contact us</a> |
-        <a href="#esp" lang="es" hreflang="es">ESP</a>
+        <a href="/es/" lang="es" hreflang="es" onclick="sessionStorage.setItem('langChosen','es')">ESP</a>
+
 
       </nav>
       <div class="footer-legal">

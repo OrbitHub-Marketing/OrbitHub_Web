@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>OrbitHub</title>
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://orbithub.tech/" />
+  <link rel="alternate" href="https://orbithub.tech/en/" hreflang="en" />
+  <link rel="alternate" href="https://orbithub.tech/es/" hreflang="es" />
+  <link rel="alternate" href="https://orbithub.tech/" hreflang="x-default" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OrbitHub – Innovative Labs & Offices for DeepTech and Space Startups" />
+  <meta property="og:description" content="Labs and offices for DeepTech and Space startups. Discover OrbitHub – the new innovation cluster near Barcelona." />
+  <meta property="og:url" content="https://orbithub.tech/" />
+  <meta property="og:image" content="/images/og-preview.jpg" />
+  <meta property="og:site_name" content="OrbitHub" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OrbitHub – Innovative Labs & Offices for DeepTech" />
+  <meta name="twitter:description" content="Labs and offices for DeepTech and Space startups. Near Barcelona." />
+  <meta name="twitter:image" content="/images/og-preview.jpg" />
+
+  <!-- Redirección automática según idioma o preferencia -->
+  <script>
+    (function () {
+      // Si el usuario ya eligió idioma, redirige directamente
+      var chosen = sessionStorage.getItem('langChosen');
+      if (chosen) {
+        location.replace('/' + chosen + '/');
+        return;
+      }
+
+      // Si no, detecta idioma del navegador
+      var pref = (navigator.language || '').toLowerCase();
+      var to = pref.startsWith('es') ? 'es' : 'en';
+      sessionStorage.setItem('langRedirected', '1');
+      location.replace('/' + to + '/');
+    })();
+  </script>
+
+  <style>
+    body { margin:0; background:#fff; color:#333; font-family:sans-serif; text-align:center; padding-top:3rem; }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <p>Choose your language / Elige idioma:
+      <a href="/en/">English</a> · <a href="/es/">Español</a>
+    </p>
+  </noscript>
+</body>
+</html>

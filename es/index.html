@@ -2,7 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Canonical propia -->
+  <link rel="canonical" href="https://orbithub.tech/es/" />
+
+  <!-- Hreflang cruzado -->
+  <link rel="alternate" href="https://orbithub.tech/en/" hreflang="en" />
+  <link rel="alternate" href="https://orbithub.tech/es/" hreflang="es" />
+  <link rel="alternate" href="https://orbithub.tech/" hreflang="x-default" />
+
+  <!-- Open Graph URL -->
+  <meta property="og:url" content="https://orbithub.tech/es/" />
 
   <!-- Primary Meta -->
   <title>OrbitHub – Laboratorios y oficinas para startups en DeepTech y el sector espacial.</title>
@@ -61,7 +73,7 @@
           <li><a href="#features">Características</a></li>
           <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
           <li><a href="#why-joining">Contáctanos</a></li>
-          <li><a href="#esp" lang="es" hreflang="es">ENG</a></li>
+          <li><a href="/en/" lang="en" hreflang="en" onclick="sessionStorage.setItem('langChosen','en')">ENG</a></li>
         </ul>
       </nav>
     </div>
@@ -95,7 +107,7 @@
 <!-- WHAT IS ORBITHUB Section -->
 <section id="que-es-OrbitHub" class="intro-section" aria-label="Collaboration section">
   <p class="intro-subtitle">UN HUB DE COLABORACIÓN DEEPTECH</p>
-  <h2 class="intro-title">Un entorno dinámico diseñado para que startups tecnológicas y del sector espacialcolaboren, innoven y crezcan.</h2>
+  <h2 class="intro-title">Un entorno dinámico diseñado para que startups tecnológicas y del sector espacial colaboren, innoven y crezcan.</h2>
   <p class="intro-description">
     OrbitHub es el entorno ideal para startups DeepTech y del sector espacial en fase de crecimiento. Combinamos instalaciones de alto nivel, servicios personalizados y una comunidad basada en la colaboración para acelerar la I+D y el crecimiento empresarial.
   </p>
@@ -112,7 +124,7 @@
   <article class="feature-card">
     <img src="images/OfficeSpace.png" alt="Office zone" />
     <h3>Zona de oficinas</h3>
-    <p>Espacio de oficinas anexo a los laboratorios, orientado a actividades técnicas y empresariales, con puestos de trabajo abiertos, despachos privados, salas de reuniones y cabinas individuales.</p>
+    <p>Espacio de oficinas anexo a los laboratorios, orientado a actividades técnicas y empresariales, con puestos de trabajo abiertos, despachos privados, salas de reuniones y cabinas insonorizadas.</p>
   </article>
 
   <article class="feature-card">
@@ -355,7 +367,8 @@ function openTeamLink(event) {
         <a href="#features">Características</a> |
         <a href="#sobre-nosotros">Sobre nosotros</a> |
         <a href="#why-joining">Contáctanos</a> |
-        <a href="#esp" lang="es" hreflang="es">ENG</a>
+        <a href="/en/" lang="en" hreflang="en" onclick="sessionStorage.setItem('langChosen','en')">ENG</a>
+
 
       </nav>
       <div class="footer-legal">
