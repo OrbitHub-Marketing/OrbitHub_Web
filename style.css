@@ -764,12 +764,12 @@ footer {
 /* background-color: #7cb5f9; /* Cosymbio/Nova blue */
 background-color: rgba(223, 223, 223, 0.7); /* Fondo semitransparente para legibilidad */
 color:  #1e1e1e;
-padding: 50px 20px;
+padding: 40px 20px;
 text-align: center;
 font-family: 'Poppins', sans-serif;
 }
 .footer-title {
-font-size: 2.2rem;
+font-size: 2.0rem;
 font-weight: 700;
 margin-bottom: 10px;
 }
