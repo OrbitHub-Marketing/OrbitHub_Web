@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Minimal SEO for language redirect page -->
   <title>OrbitHub</title>
-
+  <meta name="description" content="OrbitHub official website." />
+  <meta name="robots" content="index,follow" />
   
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://orbithub.tech/" />
@@ -11,29 +15,15 @@
   <link rel="alternate" href="https://orbithub.tech/es/" hreflang="es" />
   <link rel="alternate" href="https://orbithub.tech/" hreflang="x-default" />
 
-  <!-- Robots -->
-  <meta name="robots" content="index,follow" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/hero_v3_favicon.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="OrbitHub – R&amp;D Infrastructure and Engineering Services for DeepTech and SpaceTech" />
-  <meta property="og:description" content="Labs and offices for DeepTech and Space startups. Discover OrbitHub – the new innovation cluster near Barcelona." />
-  <meta property="og:url" content="https://orbithub.tech/" />
-  <meta property="og:image" content="/images/og-preview.jpg" />
-  <meta property="og:site_name" content="OrbitHub" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="OrbitHub – R&amp;D Infrastructure and Engineering Services for DeepTech and SpaceTech" />
-  <meta name="twitter:description" content="Labs and offices for DeepTech and Space startups. Near Barcelona." />
-  <meta name="twitter:image" content="/images/og-preview.jpg" />
-
-  <!-- Redirección automática según idioma o preferencia -->
+  <!-- Automatic language redirection -->
   <script>
     (function () {
       // Si el usuario ya eligió idioma, redirige directamente
       var chosen = sessionStorage.getItem('langChosen');
-      if (chosen) {
+      if (chosen === 'en' || chosen === 'es') {
         location.replace('/' + chosen + '/');
         return;
       }
@@ -41,7 +31,6 @@
       // Si no, detecta idioma del navegador
       var pref = (navigator.language || '').toLowerCase();
       var to = pref.startsWith('es') ? 'es' : 'en';
-      sessionStorage.setItem('langRedirected', '1');
       location.replace('/' + to + '/');
     })();
   </script>
@@ -53,8 +42,9 @@
 
 <body>
   <noscript>
+    <p>OrbitHub official website</p>
     <p>Choose your language / Elige idioma:
-      <a href="/en/">English</a> · <a href="/es/">Español</a>
+      <a href="/en/" hreflang="en">English</a> · <a href="/es/" hreflang="es">Español</a>
     </p>
   </noscript>
 </body>
