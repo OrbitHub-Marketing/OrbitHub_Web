@@ -28,7 +28,7 @@
         return;
       }
 
-      // Si no, detecta idioma del navegador
+      // Si no, detecta idioma del navegador 
       var pref = (navigator.language || '').toLowerCase();
       var to = pref.startsWith('es') ? 'es' : 'en';
       location.replace('/' + to + '/');
